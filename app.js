@@ -1,10 +1,14 @@
 const startDate = new Date("2025-04-02"); // CHANGE to your date
-const today = new Date();
 
-const diffTime = today - startDate;
-const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+function updateCounter() {
+  const today = new Date();
+  const diffTime = today - startDate;
+  const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  document.getElementById("counter").innerText = `${days} days`;
+}
 
-document.getElementById("counter").innerText = `${days} days`;
+updateCounter(); // Initial call
+setInterval(updateCounter, 1000); // Update every second
 
 const notes = [
   "The way you understand me without words.",
