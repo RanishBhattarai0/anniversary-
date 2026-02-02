@@ -3,8 +3,13 @@ const startDate = new Date("2025-04-02"); // CHANGE to your date
 function updateCounter() {
   const today = new Date();
   const diffTime = today - startDate;
+  
   const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-  document.getElementById("counter").innerText = `${days} days`;
+  const hours = Math.floor((diffTime / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diffTime / (1000 * 60)) % 60);
+  const seconds = Math.floor((diffTime / 1000) % 60);
+  
+  document.getElementById("counter").innerText = `${days}d · ${hours}h · ${minutes}m · ${seconds}s`;
 }
 
 updateCounter(); // Initial call
