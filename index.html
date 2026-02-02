@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Months With You</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body class="bg-gradient-to-b from-rose-50 via-white to-rose-100 text-gray-800 font-[Inter]">
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 space-y-8">
+
+  <div class="px-4 py-1 rounded-full text-xs tracking-[0.35em] uppercase text-rose-500 bg-rose-100/70 border border-rose-200">
+    Hey, my bubu😘
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-4xl md:text-6xl font-medium">
+    10 Months With You
+  </h1>
+
+  <!-- Subtitle -->
+  <p class="text-gray-500 max-w-md">
+    A small page for something very big to me.
+  </p>
+
+  <div class="w-full max-w-2xl grid sm:grid-cols-3 gap-4">
+    <div class="bg-white/80 backdrop-blur rounded-2xl p-4 border border-rose-100 shadow-sm">
+      <p class="text-xs text-rose-400 uppercase tracking-widest mb-2">Firsts</p>
+      <p class="text-sm text-gray-600">The first text, The first Chai, The first laugh, The first Date</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur rounded-2xl p-4 border border-rose-100 shadow-sm">
+      <p class="text-xs text-rose-400 uppercase tracking-widest mb-2">Everyday</p>
+      <p class="text-sm text-gray-600">Chiya dates, Clingy talks, Bullying Eachother</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur rounded-2xl p-4 border border-rose-100 shadow-sm">
+      <p class="text-xs text-rose-400 uppercase tracking-widest mb-2">Forever</p>
+      <p class="text-sm text-gray-600">More memories, more love, more ussssss.</p>
+    </div>
+  </div>
+
+  <!-- Counter -->
+  <div class="bg-white/70 backdrop-blur rounded-3xl px-8 py-5 border border-rose-100 shadow-sm">
+    <p class="text-sm text-gray-500 mb-1">
+      We’ve been together for
+    </p>
+    <h2 id="counter" class="text-3xl font-medium text-rose-500"></h2>
+  </div>
+
+  <!-- Reveal Button -->
+  <div class="pt-6 w-full max-w-xs">
+    <button
+      onclick="revealNote()"
+      class="w-full rounded-full bg-rose-500 text-white py-3 text-sm shadow-md hover:bg-rose-600 transition-all duration-300">
+      Tap to reveal
+    </button>
+
+    <!-- Revealed Text -->
+    <p id="note" class="hidden mt-6 text-gray-600 transition-opacity duration-500">
+    </p>
+  </div>
+
+</section>
+</body>
+</html>
